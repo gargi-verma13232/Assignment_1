@@ -1,0 +1,151 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ffcea8 0%, brown 100%);
+    min-height: 100vh;
+    padding: 20px;
+    color: #333;
+}
+
+
+.container h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    text-shadow: 1px 2px 6px rgba(0,0,0,0.3);
+}
+
+
+.dashboard {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+
+.form-section,
+.events-section,
+.demo-section {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+
+h2 {
+    color:brown;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    transition: 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: brown;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    background:brown;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background:brown;
+    transform: translateY(-2px);
+}
+
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.controls button {
+    flex: 1;
+    font-size: 0.85rem;
+}
+
+
+#eventContainer {
+    min-height: 150px;
+    padding: 15px;
+    border: 2px dashed #eee;
+    border-radius: 10px;
+}
+
+.empty-state {
+    text-align: center;
+    color: #777;
+    font-size: 0.95rem;
+}
+
+
+.demo-section {
+    max-width: 1100px;
+    margin: 30px auto 0;
+}
+
+.demo-box {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+}
+
+.demo-content {
+    font-size: 1rem;
+    color: #777;
+}
+
+@media (max-width: 900px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+}
