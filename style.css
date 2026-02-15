@@ -149,3 +149,57 @@ button:hover {
         grid-template-columns: 1fr;
     }
 }
+
+
+.event-card {
+    background: #e9eef6;
+    padding: 18px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.event-date {
+    font-size: 0.9rem;
+    margin: 6px 0;
+    color: #555;
+}
+
+.event-category {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    border-radius: 20px;
+    background: #6c63ff;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.delete-btn {
+    background: #ff5c5c;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+
+.event-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+
+.event-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
